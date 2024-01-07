@@ -2355,8 +2355,10 @@
                 method="POST"
                 data-id=""
                 data-content-module-unique-id=""
-                netlify
+                action="https://formsubmit.co/kellylambeth93@gmail.com"
               >
+              <input type="hidden" name="_next" id="_nextPage" >
+
                 <div class="error_messages"></div>
                 <input
                   class="_4ORMAT_module_contact_input"
@@ -2482,6 +2484,9 @@
     <script src="./contact_files/main.js.download"></script>
 
     <script>
+      var addressDomain = window.location.hostname;
+      document.getElementById("_nextPage").value = addressDomain + "index.html";
+
       var _gaq = _gaq || [];
 
       _gaq.push(["t2._setAccount", "UA-39803438-1"]);

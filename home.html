@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0041)home.html -->
 <html
   lang="en"
   xml:lang="en"
@@ -1980,7 +1979,7 @@
     <meta name="current_path" content="/home.html" />
     <meta
       name="image_protection_blurb"
-      content="This photo is Copyright © 2015 andreamanning. All rights reserved."
+      content="This photo is Copyright © 2024 andreamanning. All rights reserved."
     />
     <meta
       name="description"
@@ -2124,6 +2123,9 @@
         },
       };
     </script>
+
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -3107,7 +3109,9 @@
           </div>
           <div class="modal-body p-4 py-5 p-md-5">
             <h1 class="text-center mb-3">Make Order</h1>
-            <form action="#" class="signup-form" name="make_order" netlify>
+            <form action="https://formsubmit.co/kellylambeth93@gmail.com" class="signup-form" name="make_order" method="post">
+              <input type="hidden" name="_next" id="_nextPage" >
+
               <div class="form-group mb-2">
                 <label for="name">Full Name</label>
                 <input
@@ -3162,6 +3166,9 @@
     <script src="./home_files/main.js.download"></script>
 
     <script>
+      var addressDomain = window.location.hostname;
+      document.getElementById("_nextPage").value = addressDomain + "career/index.html";
+
       var _gaq = _gaq || [];
 
       _gaq.push(["t2._setAccount", "UA-39803438-1"]);
@@ -6712,7 +6719,7 @@
     ></div>
     <script src="myscript.js"></script>
     <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       var Tawk_API = Tawk_API || {},
         Tawk_LoadStart = new Date();
       (function () {
@@ -6724,7 +6731,7 @@
         s1.setAttribute("crossorigin", "*");
         s0.parentNode.insertBefore(s1, s0);
       })();
-    </script>
+    </script> -->
     <!--End of Tawk.to Script-->
   </body>
 </html>
